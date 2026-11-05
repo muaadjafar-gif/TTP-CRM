@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const TOKEN_KEY = "ttp_crm_token";
 
-const baseURL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+const baseURL = import.meta.env.API_URL || "http://localhost:8000/api";
 
 const api = axios.create({ baseURL });
 
@@ -31,4 +31,3 @@ api.interceptors.response.use(
 );
 
 export default api;
-
