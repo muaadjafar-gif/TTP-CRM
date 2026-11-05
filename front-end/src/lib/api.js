@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const TOKEN_KEY = "ttp_crm_token";
 
-const baseURL = import.meta.env.API_URL || "http://localhost:8000/api";
+const baseURL = "https://ttp-crm-back-end.onrender.com/api" || "http://localhost:8000/api";
 
 const api = axios.create({ baseURL });
 
